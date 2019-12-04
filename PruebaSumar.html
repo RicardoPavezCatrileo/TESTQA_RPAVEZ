@@ -3,24 +3,52 @@
 <head>
     <title>Sumar</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-        
-        <input id="sumando1" type="text" size="10"/> +
-        <input id="sumando2" type="text" size="10"/>
-        <input type="submit" value="sumar" onclick="sumar()"/>
-
-        <div id="resultadoSUMA"></div>
-
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                            <h3>Sumando</h3>
+                            <input id="sumando1" type="text" size="10"/> +
+                            <input id="sumando2" type="text" size="10"/>
+                            <input type="submit" value="sumar" onclick="sumar()"/>
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col-sm-4">
+                            <div id="resultadoSUMA"></div> 
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-4">
+                            <h3>Restando</h3>
+                            <input id="restando1" type="text" size="10"/> -
+                            <input id="restando2" type="text" size="10"/>
+                            <input type="submit" value="restar" onclick="restar()"/>
+                    </div>
+                </div>
+            <div class="row">
+                        <div class="col-sm-4">
+                                <div id="resultadoRESTA"></div>
+            </div>
 </body>
 <script>
         function sumar(){
-            s1 = document.getElementById("sumando1").value;
+            s1 = document.getElementById("sumando1").value
             s2 = document.getElementById("sumando2").value;
             resultadoSUMA = parseFloat(s1) + parseFloat(s2);
 
             texto_resultado = document.getElementById("resultadoSUMA");
             texto_resultado.innerHTML = "la suma es: " + resultadoSUMA;
+        }
+        function restar(){
+            s3 = document.getElementById("restando1").value;
+            s4 = document.getElementById("restando2").value;
+            resultadoRESTA = parseFloat(s3) - parseFloat(s4);
+
+            texto_resultado = document.getElementById("resultadoRESTA");
+            texto_resultado.innerHTML = "la resta es: " + resultadoRESTA;
         }
 </script>
 </html>
