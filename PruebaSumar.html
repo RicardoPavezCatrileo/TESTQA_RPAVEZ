@@ -1,0 +1,26 @@
+<Doctype html>
+<html>
+<head>
+    <title>Sumar</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+        
+        <input id="sumando1" type="text" size="10"/> +
+        <input id="sumando2" type="text" size="10"/>
+        <input type="submit" value="sumar" onclick="sumar()"/>
+
+        <div id="resultadoSUMA"></div>
+
+</body>
+<script>
+        function sumar(){
+            s1 = document.getElementById("sumando1").value;
+            s2 = document.getElementById("sumando2").value;
+            resultadoSUMA = parseFloat(s1) + parseFloat(s2);
+
+            texto_resultado = document.getElementById("resultadoSUMA");
+            texto_resultado.innerHTML = "la suma es: " + resultadoSUMA;
+        }
+</script>
+</html>
