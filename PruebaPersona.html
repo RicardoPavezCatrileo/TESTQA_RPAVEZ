@@ -1,0 +1,32 @@
+<Doctype html>
+<html>
+<head>
+    <title>Persona</title>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   
+</head>
+<body>
+                <input id="nombreBuscado" type="text" size="10"/> 
+                <input type="submit" value="nombreBuscar" id="#imgid"/>
+</body>
+<script>
+        var Persona = [
+        {"nombre":"ricardo","apellido":"pavez","telefono":"56964129640","email":"rp@gmail.com"},
+        {"nombre":"sofia","apellido":"pavez","telefono":"56964129640","email":"sp@gmail.com"},
+        {"nombre":"joaquin","apellido":"pavez","telefono":"56964129640","email":"jp@gmail.com"}];
+
+var index = -1;
+var valorBuscado = "joaquin"
+var filtrarobjetodelectura = Persona.find(
+        function Buscar(item,i){  
+        if(item.nombre === valorBuscado){
+                index = i;
+                return i;    
+        }});
+console.table(filtrarobjetodelectura);
+console.log(Persona[0]);
+console.log(Persona[1]);
+console.log(Persona[2]);
+</script>
+</html>
