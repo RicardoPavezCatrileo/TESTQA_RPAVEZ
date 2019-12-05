@@ -10,9 +10,9 @@
                 <div class="row">
                     <div class="col-sm-4">
                             <h3>Sumando</h3>
-                            <input id="sumando1" type="text" size="10"/> +
+                            1) <input id="sumando1" type="text" size="10"/> +
                             <input id="sumando2" type="text" size="10"/>
-                            <input type="submit" value="sumar" onclick="sumar()"/>
+                            <input type="submit" value="Sumar" onclick="sumar()"/>
                     </div>
                 </div>
             <div class="row">
@@ -22,15 +22,15 @@
             </div>
             <div class="row">
                     <div class="col-sm-4">
-                            <h3>Restando</h3>
-                            <input id="restando1" type="text" size="10"/> -
-                            <input id="restando2" type="text" size="10"/>
-                            <input type="submit" value="restar" onclick="restar()"/>
+                            <h3>Multiplicando</h3>
+                            1) <input id="multi1" type="text" size="10"/> *
+                            <input id="multi2" type="text" size="10"/>
+                            <input type="submit" value="Multiplicar" onclick="multiplicar()"/>
                     </div>
                 </div>
             <div class="row">
                         <div class="col-sm-4">
-                                <div id="resultadoRESTA"></div>
+                                <div id="resultadoMULTI"></div>
             </div>
 </body>
 <script>
@@ -42,13 +42,13 @@
             texto_resultado = document.getElementById("resultadoSUMA");
             texto_resultado.innerHTML = "la suma es: " + resultadoSUMA;
         }
-        function restar(){
-            s3 = document.getElementById("restando1").value;
-            s4 = document.getElementById("restando2").value;
-            resultadoRESTA = parseFloat(s3) - parseFloat(s4);
+        function multiplicar(){
+            s3 = document.getElementById("multi1").value;
+            s4 = document.getElementById("multi2").value;
+            resultadoMULTI = parseFloat(s3) * parseFloat(s4);
 
-            texto_resultado = document.getElementById("resultadoRESTA");
-            texto_resultado.innerHTML = "la resta es: " + resultadoRESTA;
+            texto_resultado = document.getElementById("resultadoMULTI");
+            texto_resultado.innerHTML = "la multiplicación es: " + resultadoMULTI;
         }
 </script>
 </html>
