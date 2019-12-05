@@ -1,11 +1,39 @@
 {
-    "Dato_cliente": {"Nombre": "string","Apellido": "string","Direccion": "string","Email": "string","Telefono": "number","RUT": "number"},
-    "Dato_perfil": {"Cuenta_ppal": "number","Tipo_cliente": "string","Tarjeta_debito": "number"},
-    "Dato_Sucursal": {"Sucursal_nro": "number","Ejecutivo": "string","Telefono_ejec":"number","Direccion_suc": "string"},
-    "Dato_productos": {"Tiene_prod": "boolean","Tipo_producto": ["Consumo","Hipotecario","Linea_emergencia","Linea_sobregiro"],
-	"Puntos": "number","Tarjeta_credito": "number"},
-    "Datos_seguros": {"Tiene_prod": "boolean","SOAP": "string","Seguro_vehiculo": "string","Seguro_fraude": "string","Seguro_hogar": "string","Seguro_vida": "string"},
-    "Datos_fondos": {"Fondo_mutual": "string","Ahorro_previsional": "number","ctaRentaDiaria": "string"},
-    "Datos_penalizaciones": {"InteresesMora_Sobregiro": "number","InteresMora_TarjetaCredito": "number",
-    "InteresMora_Consumo": "number","InteresMora_Hipotecario": "number"}
+    "Dato_cliente": 
+        {"Nombre": "string",
+        "Apellido": "string",
+        "Direccion": "string",
+        "Email": "string",
+        "Telefono": "number",
+        "RUT": "number"},
+    "Dato_perfil": 
+        {"Cuenta_ppal": "number",
+        "Tipo_cliente": "string",
+        "Tarjeta_debito": "number"},
+    "Dato_Sucursal": 
+        {"Sucursal_nro": "number",
+        "Ejecutivo": "string",
+        "Telefono_ejec":"number",
+        "Direccion_suc": "string"},
+    "Dato_productos": 
+        {"Tiene_prod": "boolean",
+        "Tipo_producto": ["Consumo","Hipotecario","Linea_emergencia","Linea_sobregiro"],
+        "Puntos": "number",
+        "Tarjeta_credito": "number"},
+    "Datos_seguros": 
+        {"Tiene_prod": "boolean",
+        "SOAP": "string",
+        "Seguro_vehiculo": "string",
+        "Seguro_fraude": "string",
+        "Seguro_hogar": "string",
+        "Seguro_vida": "string"},
+    "Datos_fondos": 
+        {"Fondo_mutual": "string",
+        "Ahorro_previsional": "number",
+        "ctaRentaDiaria": "string"},
+    "Datos_penalizaciones": 
+        {"InteresesMora_Sobregiro": "number",
+        "InteresMora_TarjetaCredito": "number",
+        "InteresMora_Consumo": "number",
+        "InteresMora_Hipotecario": "number"}
 }
